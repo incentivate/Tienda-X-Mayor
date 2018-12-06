@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Borrar Productos</title>
+    <style>
+        .principal{margin-top: 100px}
+    </style>
+</head>
+<body>
+
+    <header class="header-principal">
+			<nav>
+				<div class="menuPrincipal">
+					<ul>
+						<li><a id="home" href="../php/index.php">HOME</a></li>
+					</ul>
+				</div>
+				<!-- Cierra el div del menu principal -->
+			</nav>
+			<!-- Cierra el nav -->
+	</header>
+
+    <div data-ng-app="miApp" data-ng-controller="ctrl" class="principal">
+        <div class="jumbotron">
+            <h1>Productos</h1>
+            <div class="row">
+                <div id="divImagenes" class="lead col-lg-4" data-ng-repeat="(id, producto) in productos">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <img data-ng-src="{{producto.Imagen}}" id="imagenDiv" alt="imagen del producto">
+                            <h6 class="list-group-item-heading" id="tituloProducto">{{producto.Nombre}}</h6>
+                            <span id="precio" class="list-group-item-text"><span id="signoPesos2">$</span>{{producto.Precio}}</span>
+                            <a class="btn btn-danger" id="botonBorrar" href="../php/borrarImagenes.php?id='{{producto.id}}'">Borrar Imagen</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Cierra el div del row -->
+        </div> <!-- Cierra el div jumbotron -->
+    </div> <!-- Cierra el div de la app -->
+    <script src="../js/angular/angular.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

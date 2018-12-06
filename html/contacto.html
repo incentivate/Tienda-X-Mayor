@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda X Mayor</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <div class="container" data-ng-app="miApp" data-ng-controller="ctrl"> <!-- Abre el div del body -->
+
+		<header class="header-principal">
+		<nav>
+		<div class="menuPrincipal">
+		<ul>
+			<li><a id="home" href="../php/index.php">HOME</a></li>
+			<li><a id="admin" href="../php/admin.php">ADMINISTRADOR</a></li>
+            <li><a id="contacto" href="../html/contacto.html">CONTACTO</a></li>
+            <li><a id="ingresar" href="../php/ingresar.php">INGRESAR</a></li>
+			<li><a href="../php/verCarrito.php"><img id="imagenCarrito" src="../imagenes/carritoRESIZE.png" alt="carrito de compras"></a>
+			</li>
+		</ul>
+		</div> <!-- Cierra el div del menu principal -->
+		</nav> <!-- Cierra el nav -->
+		</header> <!--Cierra el header principal -->
+	
+    <h1>CONTACTO</h1>
+    <h2>A LA BREVEDAD NOS PONDREMOS EN CONTACTO CON USTED</h2>
+    
+    <form class="form-horizontal" id="formulario">
+    
+    <div class="form-group">
+    <label for="nombre">Nombre y Apellido</label>
+    <input type="text" id="nombre" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+    <label for="empresa">Empresa</label>
+    <input type="text" id="empresa" class="form-control">
+    </div>
+    
+    <div class="form-group">
+    <label for="pais">País</label>
+    <input type="text" id="pais" class="form-control">
+    </div>
+    
+    <div class="form-group">
+    <label for="telefono">Teléfono</label>
+    <input type="text" id="telefono" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+    <label for="mail">E-mail</label>
+    <input type="text" id="mail" class="form-control" required>
+    <small></small>
+    </div>
+    
+    <div class="form-group">
+    <label for="area">Área</label>
+    <input type="text" id="area" class="form-control">
+    </div>
+    
+    <div class="form-group">
+    <label for="consulta">Consulta</label>
+    <textarea name="consulta" id="consulta" cols="30" rows="10" class="form-control" required>
+    </textarea>
+    </div>
+    
+    <div class="boton">
+    <button class="btn btn-success" type="submit">ENVIAR CONSULTA</button><br>
+    <button class="btn btn-danger" type="reset">REINICIAR</button>
+    </div>
+    
+    </form>
+ </div>   
+</body>
+</html>

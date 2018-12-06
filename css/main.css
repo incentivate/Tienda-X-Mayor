@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 250px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: green;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.productos{
+    margin-top: 50px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.contenedor-imagen-principal{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imagen-principal{
+    width: 70%;
+    height: 70%;
+    margin: 20px 0 20px 0;
+    border-radius: 50%;
+}
+
+#divImagenes{
+	margin-top: 50px;
+}
+
+#imagenDiv{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;  /*Mantiene el tamaño parejo de las imagenes */
+	height: 200px;
+}
+
+#tituloProducto{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#precio{
+	display: block;
+	text-align: center;
+	color: green;
+	margin: 5px auto 5px auto;
+}
+
+#botonAgregarCarrito, #botonBorrar{
+    display: block;
+	margin: 5px auto 5px auto;
+}
+
+
+/* FOOTER PRINCIPAL */
+
+footer{
+	text-align: center;
+    background-color: blueviolet;
+    height: 10%;
+    width: 100%;
+    padding: 30px 30px 30px 0px;
+	display: flex;
+	margin-top: 20px;
+}
+
+footer p{
+	margin: auto;
+}

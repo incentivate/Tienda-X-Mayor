@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/header.css">	
+	
+	<title>Admin - Tienda X Mayor</title>
+	<style type="text/css">
+		form{
+			margin-top: 120px;
+		}
+		h1{
+			text-align: center;
+			margin-top: 190px;
+			color: green;
+		}	
+	</style>
+</head>
+
+<body>
+
+		<header class="header-principal">
+				<nav>
+					<div class="menuPrincipal">
+						<ul>
+							<li><a id="home" href="../php/index.php">HOME</a></li>
+						</ul>
+					</div>
+					<!-- Cierra el div del menu principal -->
+				</nav>
+				<!-- Cierra el nav -->
+			</header>
+
+	<h1>ADMINISTRADOR</h1>
+
+	<div class="container" data-ng-app="miApp" data-ng-controller="ctrl">
+		<center>
+			<form action="../php/subirImagenes.php" method="post" enctype="multipart/form-data" name="form">
+				<label for="imagenes">Imagen:</label>
+				<input name="imagenes" type="file" class="form-control" required>
+					<br>
+					<br>
+				<label for="nombreImagen">Nombre de la imagen:</label>
+				<input type="text" name="nombreImagen" class="form-control" required>
+					<br>
+				<label for="precioImagen">Precio del producto:</label>
+				<input type="text" name="precioImagen" class="form-control" required>
+					<br>
+					<br>
+				<input class="btn btn-success" type="submit" value="OK">
+			</form>
+		</center>
+	
+	</div> <!-- Cierra el div del container -->
+</body>
+</html>
